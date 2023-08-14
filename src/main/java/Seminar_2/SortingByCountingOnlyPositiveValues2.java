@@ -2,7 +2,7 @@ package Seminar_2;
 
 import java.util.Arrays;
 
-public class SortingByCounting2 {
+public class SortingByCountingOnlyPositiveValues2 {
     public static void main(String[] args) {
         int[] arr = {19, 234, 714, 2000, 7, 2, 5, 4, 3, 2, 543, 98, 168, 2, 657, 345};
         System.out.println("Входящий массив");

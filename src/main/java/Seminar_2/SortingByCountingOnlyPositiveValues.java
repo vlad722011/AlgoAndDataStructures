@@ -3,7 +3,7 @@ package Seminar_2;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class SortingByCounting {
+public class SortingByCountingOnlyPositiveValues {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите длину входящего массива: ");
@@ -34,6 +34,8 @@ public class SortingByCounting {
         // увеличенному на единицу. Созданный массив по умолчанию наполнен нулями.
 
         int[] tempArray = new int[maxElementInArray + 1];
+
+        //Запишем в него количество вхождений каждого элемента поиндексно.
 
         for (int i = 0; i < array.length; i++) {
             int index = array[i];
