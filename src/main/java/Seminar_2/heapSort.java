@@ -1,6 +1,5 @@
 package Seminar_2;
 import java.util.Arrays;
-
 public class heapSort {
     public static void main(String[] args) {
         int[] arr = {3, 2, 2, 3, 5, 6, 6, 7, 957, -112, 817, 0, 94};
@@ -25,9 +24,7 @@ public class heapSort {
         }
         return array;
     }
-
     public static void heapify(int[] array, int heapSize, int rootIndex) {
-
         // инициализируем наибольший элемент как корень
         int largest = rootIndex;
         // левый потомок корня
@@ -42,7 +39,6 @@ public class heapSort {
         if (rightChild < heapSize && array[rightChild] > array[largest]) {
             largest = rightChild;
         }
-
         // если самый большой элемент не корень
         if (largest != rootIndex) {
             int temp = array[rootIndex];

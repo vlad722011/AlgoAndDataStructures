@@ -1,12 +1,8 @@
 package Seminar_2;
-
 import java.util.Arrays;
 import java.util.Scanner;
-
 public class heapSort3 {
-
     private static int heapSize;
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите длину входящего массива: ");
@@ -17,14 +13,9 @@ public class heapSort3 {
             inArray[i] = scanner.nextInt();
         }
         System.out.println(Arrays.toString(inArray));
-
-
         System.out.println("Сортируем массив методом сортировки кучей (наглядная демонстрация процесса, пошагово): ");
         sort(inArray);
-
-
     }
-
     public static void sort(int[] arr) {
         buildHeap(arr);
         while (heapSize > 1) {
@@ -33,7 +24,6 @@ public class heapSort3 {
             heapify(arr, 0);
         }
     }
-
     public static void buildHeap(int[] array) {
         heapSize = array.length;
         for (int i = array.length / 2; i >= 0; i--) {
@@ -41,7 +31,6 @@ public class heapSort3 {
         }
         System.out.println(Arrays.toString(array));
     }
-
     private static void heapify(int[] a, int rootIndex) {
         int l = left(rootIndex);
         int r = right(rootIndex);
@@ -57,15 +46,12 @@ public class heapSort3 {
             heapify(a, largest);
         }
     }
-
     private static int right(int i) {
         return 2 * i + 2;
     }
-
     private static int left(int i) {
         return 2 * i + 1;
     }
-
     private static void swap(int[] array, int i, int j) {
         int temp = array[i];
         array[i] = array[j];
