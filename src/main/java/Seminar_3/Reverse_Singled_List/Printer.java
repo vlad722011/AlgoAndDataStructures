@@ -1,4 +1,4 @@
-package Seminar_3.Reverse_Singled_Linked_List;
+package Seminar_3.Reverse_Singled_List;
 
 public class Printer {
     public static void main(String[] args) {
